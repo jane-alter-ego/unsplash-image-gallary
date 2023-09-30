@@ -12,6 +12,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 #wrapper {
@@ -24,18 +25,55 @@ body {
     background-color: white;
 }
 
-header, main {
+header, main, footer {
     width: 1400px;
+    background-color: black;
+}
+
+.fa-camera {
+    margin-right: 20px;
+}
+
+#input {
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/*удаляет дефолт на синюю обводку инпута*/
+input[type="text"] {
+    outline:none
+}
+/*делает обводку при постановке курсора в инпут*/
+input[type="text"]:focus {
+    border: 2px solid orange;
+}
+
+#images {
+    width: 100%;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header {
+    border-bottom: 5px solid orange;
 }
 
 footer {
-    width: 1400px;
-    background-color: black;
+    border-top: 5px solid orange;
+}
+
+header, footer {
     padding: 5px 20px;
     display: flex;
+    flex-direction: row nowrap;
     justify-content: space-between;
     align-items: center;
     color: white;
+
 }
 
 a {
@@ -44,7 +82,7 @@ a {
     cursor: pointer;
 }
 
-ul {
+header div, ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
