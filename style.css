@@ -51,11 +51,22 @@ input[type="text"]:focus {
 }
 
 #images {
-    width: 100%;
+    max-width: 1440px;
     display: flex;
-    flex-direction: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 15px;
+}
+
+#images > div {
+    width: 380px;
+    height: 214px;
+    margin-top: 15px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
 }
 
 header {
