@@ -25,13 +25,22 @@ body {
     background-color: white;
 }
 
-header, main, footer {
+header, footer {
     width: 1400px;
+    background-color: black;
+}
+
+main {
+    width: 1440px;
     background-color: black;
 }
 
 .fa-camera {
     margin-right: 20px;
+}
+
+.fa-search {
+    cursor: pointer;
 }
 
 #input {
