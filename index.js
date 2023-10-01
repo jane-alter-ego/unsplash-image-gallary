@@ -23,6 +23,13 @@ const pageInit = () => {
 
     const searchButton = document.getElementById('fa-search');
     searchButton.addEventListener('click', (e) => searchImages());
+
+    const searchElement = document.getElementById('input');
+    searchElement.addEventListener('keyup', (e) => {
+        if (e.key === 'Enter') {
+            searchImages();
+        }
+    })
     
 }
 
