@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+    border: 0;
+    font-family: sans-serif;
+    font-size: 100%;
+}
+
+body {
+    background: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+#wrapper {
+    max-width: 1440px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+header, footer {
+    width: 1400px;
+    background-color: black;
+}
+
+main {
+    width: 1440px;
+    background-color: black;
+}
+
+.fa-camera {
+    margin-right: 20px;
+}
+
+.fa-search {
+    cursor: pointer;
+}
+
+#input {
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/*удаляет дефолт на синюю обводку инпута*/
+input[type="text"] {
+    outline:none
+}
+/*делает обводку при постановке курсора в инпут*/
+input[type="text"]:focus {
+    border: 2px solid orange;
+}
+
+#images {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+#images > div {
+    width: 380px;
+    height: 214px;
+    margin-top: 15px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+header {
+    border-bottom: 5px solid orange;
+}
+
+footer {
+    border-top: 5px solid orange;
+}
+
+header, footer {
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header div, ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+ul > li {
+    padding-right: 20px;
+}
+
+#rss-logo img {
+    width: 60px;
+    padding-right: 20px;
+}
