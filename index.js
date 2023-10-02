@@ -21,7 +21,7 @@ const pageInit = () => {
     focusOnSearch();
     getList();
 
-    const searchButton = document.getElementById('fa-search');
+    const searchButton = document.getElementById('search-button');
     searchButton.addEventListener('click', (e) => searchImages());
 
     const searchElement = document.getElementById('input');
